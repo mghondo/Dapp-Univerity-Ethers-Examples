@@ -48,6 +48,7 @@ async function main() {
 
     // Create transaction (small amount for testing)
     const transaction = await wallet.sendTransaction({
+      
       to: RECIEVER,
       value: ethers.parseUnits("0.001", 18), // 0.001 ETH for testing
     });
